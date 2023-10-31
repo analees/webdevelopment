@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- In Class  - Assignment-4 – ex10 – COSC 2328 – Professor McCurry -->
+<!-- Analee Maharaj  -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Asg 4 - ex 10</title>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+    ></script>
+    <style></style>
+  </head>
+  <body>
+    <form
+      method="get"
+      action="http://165.227.25.105/asg04/test/action_ex10.php"
+    >
+      <fieldset>
+        <legend>Sample Choice Controls</legend>
+        <p>
+          <label id="country">Countries: </label><br />
+          <label for="where">Country: - </label>
+          <select name="where" id="where">
+            <option value="">Choose a country</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Spain">Spain</option>
+            <option value="United States">United States</option>
+            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+            <option value="Finland">Finland</option>
+            <option value="Bahamas">Bahamas</option>
+          </select>
+          <br />
+        </p>
+
+        <p>
+          <label for="continent">Continent: </label><br />
+          <select size="4" name="continent" id="continent">
+            <option value="NA">North America</option>
+            <option value="EU">Europe</option>
+            <option value="AS">Asia</option>
+            <option value="SA">South America</option>
+          </select>
+          <br />
+        </p>
+
+        <p>
+          <label for="city">City: </label><br />
+          <select name="city" id="city">
+            <optgroup label="South America">
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Lima">Lima</option>
+              <option value="São Paulo">São Paulo</option>
+            </optgroup>
+            <optgroup label="Asia">
+              <option value="Hong Kong">Hong Kong</option>
+              <option value="Tokyo">Tokyo</option>
+              <option value="Mumbai">Mumbai</option>
+            </optgroup>
+          </select>
+          <br />
+        </p>
+
+        <p>
+          <label for="gender">Gender of Traveler: </label><br />
+          <input type="radio" value="1" name="gender" id="gender">
+          Female <br />
+          <input type="radio" value="2" name="gender">
+          Male
+          <br />
+        </p>
+
+        <p><label for="hear">How did you hear about the site: </label> <br />
+          <input type="checkbox" value="email" name="hear" id="hear"> Email <br />
+          <input type="checkbox" value="friend" name="hear"> Friend <br />
+          <input type="checkbox" value="website" name="hear"> Website
+
+          <br />
+        </p>
+
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
