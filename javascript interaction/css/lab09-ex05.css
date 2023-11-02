@@ -1,0 +1,44 @@
+body {
+    font-family: Open Sans, sans-serif;
+    background-color: #E9E9E9;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20em;
+    margin-top: 2em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.card {
+    flex: 0 0 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: white;
+} 
+.card img {
+    max-width: 100%;
+}
+.card .card-body {
+    padding: 0 20px 20px;
+}
+.card .card-body > button {
+    background: #841983;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.sepia {
+    filter: sepia(1);
+}
