@@ -1,0 +1,39 @@
+<!-- 
+    html for form page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Truck Fanatic</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Food Truck Fanatic</h1>
+        <p>Enter your phone number to begin the process:</p>
+
+        <!-- User Information Form -->
+        <form id="user-info-form">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+            <!-- Updated the id of the button -->
+            <button type="button" id="getUserInfoButton">Get User Info</button>
+        </form>
+
+        <!-- Display User Info -->
+        <div id="user-info" style="display: none;">
+            <h2>Welcome back, <span id="user-name"></span>!</h2>
+            <p>Email: <span id="user-email"></span></p>
+            <p>Address: <span id="user-address"></span></p>
+        </div>
+    </div>
+
+    <!-- JavaScript Script -->
+    <script src="asg11_foodtruck.js"></script>
+</body>
+</html>

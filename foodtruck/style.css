@@ -1,0 +1,111 @@
+
+/* style form page */
+body {
+    background: linear-gradient(to right, #ffbb33, #ff4444);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: black;
+}
+
+/* Layout Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    text-align: center;
+    margin: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(244, 239, 239, 0.1);
+}
+
+/* Image Styles */
+.round-image {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Form Styles */
+select {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Drink Styles */
+.drink {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.drink-container {
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px;
+    align-items: center;
+}
+
+/* Selected Drink Container Styles */
+#selected-drink-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#selected-drink-container img {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* Total Price Styles */
+.total-price {
+    text-align: center;
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#total-price {
+    font-size: 24px;
+    color: #ff4444;
+}
+
+/* Button Styles */
+button {
+    background: #ff4444;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #ff3333;
+}

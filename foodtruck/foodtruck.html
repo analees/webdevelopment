@@ -1,0 +1,126 @@
+<!-- 
+   html for food truck order page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Truck Fanatic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Logo -->
+    <img src="images/logo.webp" alt="" class="round-image">
+
+    <!-- Menu Section -->
+    <h1>Menu</h1>
+    <div class="row">
+
+        <!-- Beef Taco -->
+        <div class="col">
+            <h3>Beef Taco</h3>
+            <img src="images/beef taco.jpg" alt="">
+            <select name="quantity">
+                <!-- Options for quantity selection -->
+            </select>
+            <p class="price">Price: $7.99</p>
+        </div>
+
+        <!-- Chicken Taco -->
+        <div class="col">
+            <h3>Chicken Taco</h3>
+            <img src="images/chicken taco.jpeg" alt="">
+            <select name="quantity">
+                <!-- Options for quantity selection -->
+            </select>
+            <p class="price">Price: $3.99</p>
+        </div>
+
+        <!-- Spicy Chicken -->
+        <div class="col">
+            <h3>Spicy Chicken</h3>
+            <img src="images/spicy-chicken-tacos-pic.jpg" alt="">
+            <select name="quantity">
+                <!-- Options for quantity selection -->
+            </select>
+            <p class="price">Price: $5.99</p>
+        </div>
+
+        <!-- Steak Tacos -->
+        <div class="col">
+            <h3>Steak Tacos</h3>
+            <img src="images/SteakStreetTacos-blog-7-1.jpg" alt="">
+            <select name="quantity">
+                <!-- Options for quantity selection -->
+            </select>
+            <p class="price">Price: $9.99</p>
+        </div>
+    </div>
+
+    <!-- Drinks Section -->
+    <h1>Drinks</h1>
+
+    <!-- Drink Selection Dropdown -->
+    <label for="drink-select">Select a drink:</label>
+    <select id="drink-select" name="drink">
+        <!-- Options for drink selection -->
+    </select>
+
+    <!-- Containers for Selected and Hidden Drinks -->
+    <div class="row">
+        <div id="selected-drink-container">
+            <!-- This container will display the selected drink -->
+        </div>
+
+        <!-- Hidden divs for each drink with their respective images -->
+        <div id="no drink" class="drink-container" style="display:none;">
+            <!-- No drink content -->
+        </div>
+
+        <div id="water" class="drink-container" style="display:none;">
+            <!-- Water content -->
+        </div>
+
+        <div id="coke" class="drink-container" style="display:none;">
+            <!-- Coke content -->
+        </div>
+
+        <div id="tea" class="drink-container" style="display:none;">
+            <!-- Tea content -->
+        </div>
+
+        <div id="drpepper" class="drink-container" style="display:none;">
+            <!-- Dr. Pepper content -->
+        </div>
+
+        <!-- Button for Placing Order -->
+        <button type="button" onclick="calculateTotal()">Place Order</button>
+        <!-- Result container for displaying the order total -->
+        <div id="result"></div>
+        
+        <!-- JavaScript Script -->
+        <script>
+            function calculateTotal() {
+                // Get all selected checkboxes
+                const checkboxes = document.querySelectorAll('input[name="quantity"]');
+        
+                // Calculate total cost
+                let totalCost = 0;
+                checkboxes.forEach(checkbox => {
+                    const quantity = parseInt(checkbox.value);
+                    const price = parseFloat(checkbox.dataset.price);
+                    totalCost += quantity * price;
+                });
+        
+                // Display the result
+                alert(`Your order was submitted with a total cost of $${totalCost.toFixed(2)}.`);
+            }
+        </script>
+        
+    </div>
+
+    <!-- Additional JavaScript Script -->
+    <script src="script.js"></script>
+</body>
+</html>
